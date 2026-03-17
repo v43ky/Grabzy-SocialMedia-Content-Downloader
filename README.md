@@ -10,7 +10,6 @@
 
 [![Release](https://img.shields.io/github/v/release/v43ky/grabzy?color=blueviolet&label=Latest%20Release&style=flat-square)](https://github.com/v43ky/grabzy/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/v43ky/grabzy/total?color=blue&style=flat-square)](https://github.com/v43ky/grabzy/releases)
-[![Flutter](https://img.shields.io/badge/Built%20with-Flutter-02569B?style=flat-square&logo=flutter)](https://flutter.dev)
 [![yt-dlp](https://img.shields.io/badge/Powered%20by-yt--dlp-FF0000?style=flat-square)](https://github.com/yt-dlp/yt-dlp)
 [![PayPal](https://img.shields.io/badge/Support-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://paypal.me/Ratan14)
 [![Stars](https://img.shields.io/github/stars/v43ky/grabzy?style=flat-square&color=yellow)](https://github.com/v43ky/grabzy/stargazers)
@@ -365,62 +364,6 @@ Progress streamed to app in real time
 File saved to your downloads folder
        ↓
 Completion notification with filename
-```
-
----
-
-## 🏗 Building from Source
-
-Want to build Grabzy yourself? Here's how:
-
-### Prerequisites
-
-- [Flutter SDK](https://flutter.dev/docs/get-started/install) (3.0 or later)
-- [Git](https://git-scm.com/)
-- A desktop development environment:
-  - **Windows:** Visual Studio with Desktop Development workload
-  - **macOS:** Xcode
-  - **Linux:** `clang`, `cmake`, `ninja-build`, `libgtk-3-dev`
-
-### Steps
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/v43ky/grabzy.git
-cd grabzy
-
-# 2. Install Flutter dependencies
-flutter pub get
-
-# 3. Enable desktop for your platform
-flutter config --enable-windows-desktop   # Windows
-flutter config --enable-macos-desktop     # macOS
-flutter config --enable-linux-desktop     # Linux
-
-# 4. Run in debug mode
-flutter run -d windows   # or macos, linux
-
-# 5. Build a release executable
-flutter build windows --release   # Windows
-flutter build macos --release     # macOS
-flutter build linux --release     # Linux
-```
-
-### Key Dependencies
-
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  path_provider: ^2.1.0        # App directory paths
-  dio: ^5.3.0                   # HTTP downloads for binaries
-  archive: ^3.4.0               # ZIP/TAR extraction for ffmpeg
-  process_run: ^0.13.0          # Running yt-dlp as subprocess
-  shared_preferences: ^2.2.0    # Persisting user settings
-  desktop_notifications: ^0.7.0 # System notifications
-  window_manager: ^0.3.0        # Desktop window management
-  tray_manager: ^0.2.0          # System tray support
-  receive_sharing_intent: ^1.8.0 # Share sheet integration
 ```
 
 ---
